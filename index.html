@@ -6,26 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <title>Scription — Automate speech transcription </title>
-  <meta name="title" content="Scription — Automate speech transcription">
+  <title>KUDO Transcription Editor </title>
+  <meta name="title" content="KUDO Transcription Editor">
   <meta name="description"
     content="Scription is an editor for automated speech-to-text transcription services like Amazon Transcribe and Mozilla Deepspeech.">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://scription.app/">
-  <meta property="og:title" content="Scription — Automate speech transcription  ">
-  <meta property="og:description"
-    content="Scription is an editor for automated speech-to-text transcription services like Amazon Transcribe and Mozilla Deepspeech.">
-  <meta property="og:image" content="https://scription.app/images/scription-screenshot.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://scription.app/">
-  <meta property="twitter:title" content="Scription — Automate speech transcription  ">
-  <meta property="twitter:description"
-    content="Scription is an editor for automated speech-to-text transcription services like Amazon Transcribe and Mozilla Deepspeech.">
-  <meta property="twitter:image" content="https://scription.app/images/scription-screenshot.png">
 
 
   <link rel="icon" href="favicon.ico" type="image/gif">
@@ -59,8 +43,8 @@
 
   <script src="javascript/dark-mode.js"></script>
 
-  <script async defer data-website-id="5023415c-1baf-4f95-8450-94899cdddcae"
-    src="https://umami-s.herokuapp.com/umami.js"></script>
+  <!-- <script async defer data-website-id="5023415c-1baf-4f95-8450-94899cdddcae"
+    src="https://umami-s.herokuapp.com/umami.js"></script>-->
 
 </head>
 
@@ -71,8 +55,9 @@
     <div class="navbar-brand">
 
 
-      <a class="navbar-item has-text-weight-bold" href="https://scription.app">
-        <img src="images/scription-logo.svg" alt="scription logo" class="logo">
+      <a class="navbar-item has-text-weight-bold" href="#">
+        
+        KUDO Transcription Editor
       </a>
 
       <!-- 
@@ -89,183 +74,53 @@
       </div>
 
       <div class="navbar-end">
-        <div class="navbar-item">
 
-          <div class="field has-addons">
-
-            <!-- user audio input -->
-
-            <div class="dropdown is-hoverable">
-              <div class="dropdown-trigger">
-                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                  <span>Load audio</span>
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                <div class="dropdown-content">
-                  <div class="dropdown-item">
-                    <!-- for file api input  -->
-                    <div class="file has-name is-small is-primary">
-                      <label class="file-label">
-                        <input id="user-audio-file" class="file-input" type="file" name="resume">
-                        <span class="file-cta">
-                          <span class="file-icon">
-                            <i class="fas fa-upload"></i>
-                          </span>
-                          <span class="file-label">
-                            Load audio…
-                          </span>
-                        </span>
-                        <span id="audio-name" class="file-name">
-
-                          demo_hi.mp3
-
-                        </span>
-
-                      </label>
-                    </div>
-
-                    <!--
-            
-              <div class="select is-small is-fullwidth"> -->
-                    <!-- <div class="is-small"> -->
-                    <!-- <select name="country" id="audioUrl">
-
-                </select> -->
-                    <!-- <input type="text" class="input is-small" id="audioUrl" placeholder="Audio url" value="audio.mp3">
-
-                
-              </div> -->
-                    <!--             
-              <div class="control">
-                <p class="control">
-               <input type="text" class="input" id="audioUrl" placeholder="Enter audio filename" value="audio.mp3">
-             </p>
-            <p class="control">
-              <button onclick="getAudioUrl()" class="button is-small is-primary">Load</button>
-            </p> 
-            </div> -->
-                  
-                <div class="dropdown-item">
-                  <div class="field has-addons navbar-item">
-                    <div class="control">
-                      <input class="input is-small" type="text" placeholder="Audio url" id="audioUrll">
-                      </input>
-                    </div>
-                    <p class="control">
-                      <button class="button is-small is-primary disabled" onclick="getAudioUrl()">Load</button>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          </div>
-        </div>
-
-
-
-        <div class="navbar-item">
+        <div class="navbar-item">  
           <div class="field has-addons navbar-item">
 
-            <div class="dropdown is-hoverable">
-              <div class="dropdown-trigger">
-                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                  <span>Load Transcript</span>
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                <div class="dropdown-content">
-                  <div class="dropdown-item">
-                    <!-- for file api json input  -->
             <div class="file has-name is-small is-primary">
               <label class="file-label">
-                <input id="user-json-file" class="file-input" type="file" name="resume">
+                <input id="user-audio-file" class="file-input" type="file" name="resume">
                 <span class="file-cta">
                   <span class="file-icon">
                     <i class="fas fa-upload"></i>
                   </span>
                   <span class="file-label">
-                    Load json…
+                    Load audio…
                   </span>
                 </span>
-                <span id="json-name" class="file-name">
-                  revai-short.json
+                <span id="audio-name" class="file-name">
+                  demo_hi.mp3
                 </span>
               </label>
             </div>
 
-
-                  
-                <div class="dropdown-item">
-                  
-                  <!-- Load json from url  -->
-                    <div class="field has-addons navbar-item">
-                      <div class="control">
-                        <input class="input is-small" type="text" placeholder="Json url" id="jsonUrll">
-                        </input>
-                      </div>
-                      <p class="control">
-                        <button class="button is-small is-primary" onclick="getJSONFromUrl()">Load</button>
-                      </p>
-                  
-                    </div>
-
-
-                </div>
-                <div class="dropdown-item">
-
-                      <p>Supported json formats include AWS Transcribe, Mozilla DeepSpeech and Rev.ai.</p>
-                      <p>JSONs loaded from a url will not work unless Cross-Origin Resource Sharing (CORS) have been <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">configured</a>.</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-
-            
-
-            <!-- <p class="control">
-            <input type="text" class="input" id="user-filename" placeholder="Enter json filename"
-              value="deepspeech.json">
-          </p> -->
-
-
-
-            <!-- <div class="control">
-              <div class="select is-small is-fullwidth">
-                <select name="country" id="user-filename">
-                </select>
-              </div>
-            </div>
-            <p class="control">
-              <button onclick="displayTranscript()" class="button is-small is-primary">Load</button>
-            </p>  -->
           </div>
         </div>
 
-        <div class="navbar-item">
-          <div class="field">
-            <button class="button is-small is-primary" onclick="clearTranscript()">Clear transcript</button>
+        <div class="navbar-item">  
+          <div class="field has-addons navbar-item">
+
+            <div class="file has-name is-small is-primary">
+              <label class="file-label">
+                <input id="user-project-file" class="file-input" type="file" name="resume">
+                <span class="file-cta">
+                  <span class="file-icon">
+                    <i class="fas fa-upload"></i>
+                  </span>
+                  <span class="file-label">
+                    Load transcript
+                  </span>
+                </span>
+                <span id="project-name" class="file-name">
+                  none selected
+                </span>
+              </label>
+            </div> 
+
           </div>
         </div>
-        <div class="navbar-item">
-          <!-- <button id="modal-button" class="button is-small is-primary is-large modal-button" data-target="modal" aria-haspopup="true" onclick="modal()">Launch example modal</button> -->
 
-          <a class="navbar-item" href="https://github.com/smlum/scription" target="_blank">
-            About &nbsp;
-            <i class="fab fa-github fa-lg"></i>
-          </a>
-
-        </div>
       </div>
     </div>
   </nav>
@@ -317,18 +172,10 @@
                       <label for="autoscroll-off">Interactive script</label>
                     </div>
                   </div>
+
                   <div class="column is-half no-right-padding">
                     <div class="field">
-                      <input id="confidence" type="checkbox" name="confidence" class="switch is-rounded is-small"
-                        checked="checked">
-                      <label for="confidence">Highlight confidence</label>
-                      <!-- <input type="text" class="input" id="user-confidence" placeholder="Enter confidnece level" value="0.95"> -->
-                    </div>
-                    <div class="field">
-                      <input id="annotation-switch" type="checkbox" name="annotation-switch"
-                        class="switch is-rounded is-small" checked="checked">
-                      <label for="annotation-switch">Annotation mode</label>
-                      <!-- <input type="text" class="input" id="user-confidence" placeholder="Enter confidnece level" value="0.95"> -->
+                      <button class="button is-small is-primary" onclick="clearTranscript()">Clear transcript</button>
                     </div>
                   </div>
                 </div>
@@ -440,141 +287,9 @@
         <div class="column is-3">
           <section class="section annotation-section scroller">
             <div class="block">
+              <h1 class="title is-4">What to do</h1>
 
 
-              <h1 class="title is-4">Annotations</h1>
-
-              <div class="accordion">
-                <!-- <span class="single-line" contenteditable="true">Component</span> -->
-                <span class="tag is-medium single-line accordion-category category-1" contenteditable="true">Category
-                  1</span>
-
-                <a href="#" class="accordion-down" aria-label="more options">
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="panel">
-                <div class="block">
-                  <h4>Annotations:</h4>
-                  <div class="annotation-content annotation-content-1"></div>
-                </div>
-              </div>
-              <div class="accordion">
-                <!-- <span class="single-line" contenteditable="true">Component</span> -->
-                <span class="tag is-medium single-line accordion-category category-2" contenteditable="true">Category
-                  2</span>
-
-                <a href="#" class="accordion-down" aria-label="more options">
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="panel">
-                <div class="block">
-                  <h4>Annotations:</h4>
-                  <div class="annotation-content annotation-content-2"></div>
-                </div>
-              </div>
-              <div class="accordion">
-                <!-- <span class="single-line" contenteditable="true">Component</span> -->
-                <span class="tag is-light is-medium single-line accordion-category category-3"
-                  contenteditable="true">Category 3</span>
-
-                <a href="#" class="accordion-down" aria-label="more options">
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="panel">
-                <div class="block">
-                  <h4>Annotations:</h4>
-                  <div class="annotation-content annotation-content-3"></div>
-                </div>
-              </div>
-              <div class="accordion">
-                <!-- <span class="single-line" contenteditable="true">Component</span> -->
-                <span class="tag is-light is-medium single-line accordion-category category-4"
-                  contenteditable="true">Category 4</span>
-
-                <a href="#" class="accordion-down" aria-label="more options">
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="panel">
-                <div class="block">
-                  <h4>Annotations:</h4>
-                  <div class="annotation-content annotation-content-4"></div>
-                </div>
-              </div>
-              <div class="accordion">
-                <!-- <span class="single-line" contenteditable="true">Component</span> -->
-                <span class="tag is-light is-medium single-line accordion-category category-5"
-                  contenteditable="true">Category 5</span>
-
-                <a href="#" class="accordion-down" aria-label="more options">
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="panel">
-                <div class="block">
-                  <h4>Annotations:</h4>
-                  <div class="annotation-content annotation-content-5"></div>
-                </div>
-              </div>
-              <div class="accordion">
-                <!-- <span class="single-line" contenteditable="true">Component</span> -->
-                <span class="tag is-light is-medium single-line accordion-category category-6"
-                  contenteditable="true">Category 6</span>
-
-                <a href="#" class="accordion-down" aria-label="more options">
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="panel">
-                <div class="block">
-                  <h4>Annotations:</h4>
-                  <div class="annotation-content annotation-content-6"></div>
-                </div>
-              </div>
-              <div class="accordion">
-                <!-- <span class="single-line" contenteditable="true">Component</span> -->
-                <span class="tag is-light is-medium single-line accordion-category category-7"
-                  contenteditable="true">Category 7</span>
-
-                <a href="#" class="accordion-down" aria-label="more options">
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="panel">
-                <div class="block">
-                  <h4>Annotations:</h4>
-                  <div class="annotation-content annotation-content-7"></div>
-                </div>
-              </div>
-
-
-
-
-              <div class="block">
-                <!-- <div class="field">
-                  <button contenteditable="true" class="button is-small is-primary" name="get-annotations"
-                    onclick="getAnnotations()">get
-                    annotations</button>
-                </div> -->
-
-              </div>
             </div>
           </section>
         </div>
@@ -595,14 +310,6 @@
 
 
   </div>
-
-
-  <!-- <p>
-    <form id="searchForm" style="float:right">
-      Playback Rate <span id="currentPbr">1</span><input id="pbr" type="range" value="1" min="0.5" max="3" step="0.1" style="width:10%">
-      <input id="search" type="text"><input type="submit" value="search">
-    </form>
-  </p> -->
 
   <!-- Audio file size modal -->
   <div class="modal model-audio-size">
@@ -652,72 +359,24 @@
       <div class="navbar-start">
         <div class="navbar-item">
           <div class="field has-addons">
-            <!-- for file api input  -->
-            <div class="file has-name is-small is-primary">
-              <label class="file-label">
-                <input id="user-project-file" class="file-input" type="file" name="resume">
-                <span class="file-cta">
-                  <span class="file-icon">
-                    <i class="fas fa-upload"></i>
-                  </span>
-                  <span class="file-label">
-                    Load project…
-                  </span>
-                </span>
-                <span id="project-name" class="file-name">
-                  none selected
-                </span>
-              </label>
-            </div>
 
-            <!-- <div class="control">
-              <div class="select is-small is-fullwidth">
-                <select name="country" id="html-load">
-
-                </select>
-              </div>
-            </div>
-            <p class="control">
-              <button onclick="LoadFromHtml()" class="button is-small is-primary">Load Project</button>
-            </p> -->
           </div>
         </div>
         <div class="navbar-item">
           <div class="field has-addons">
             <div class="control">
-              <input class="input is-small" type="text" placeholder="Project name" name="country" id="save-html-name">
+              <input class="input is-small" type="text" placeholder="File name" name="country" id="save-html-name">
 
               </input>
             </div>
             <p class="control">
               <button class="button is-small is-primary disabled" name="export-html" onclick="exportToHtml()">Save
-                Project</button>
+                finalized transcript</button>
             </p>
           </div>
         </div>
       </div>
 
-
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <div class="field">
-              <button class="button is-small is-primary disabled" name="export-transcript"
-                onclick="exportToTxt()">Export
-                transcript text</button>
-            </div>
-          </div>
-        </div>
-        <div class="navbar-item">
-          <div class="buttons">
-            <div class="field">
-              <button class="button is-small is-primary" name="export-to-csv" onclick="exportToCsv()">Export
-                annotations</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
   </nav>
 

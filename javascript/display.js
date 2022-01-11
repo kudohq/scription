@@ -196,9 +196,6 @@ function handleJsonFileSelect(evt) {
     }
 }
 
-// Listen for user uploading a json
-document.getElementById('user-json-file').addEventListener('change', handleJsonFileSelect, false);
-
 
 // load project from user selected file
 function handleProjectFileSelect(evt) {
